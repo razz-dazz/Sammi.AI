@@ -1,0 +1,5 @@
+// C:\Users\YourUser\AppData\Roaming\Code\User\settings.json
+{
+    // ... other settings you might have ...
+    "vs-kubernetes.kubectl-path": "C:\\ProgramData\\chocolatey\\bin\\kubectl.exe"
+}
