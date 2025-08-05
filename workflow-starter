@@ -1,0 +1,2 @@
+
+npm create cloudflare@latest workflows-starter -- --template "cloudflare/workflows-starter"

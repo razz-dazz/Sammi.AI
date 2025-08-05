@@ -1,5 +1,14 @@
-
-  "name": "my-worker",
+{
+  "name": "sammi-ai",
+  "main": "src/index.ts",
+  "compatibility_date": "2024-10-22",
+  "workflows": [
+    {
+      "name": "sammi-ai-workflow",
+      "binding": "MY_WORKFLOW",
+      "class_name": "MyWorkflow"
+    }
+  ],
   "route": "dev.example.com/*",
   "vars": {
     "ENVIRONMENT": "dev"
