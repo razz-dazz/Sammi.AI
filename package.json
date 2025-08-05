@@ -1,5 +1,13 @@
-{
+{{
+  ...
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  }
+  ...
+}
   "name": "my-extension",
   "version": "1.0.0-test.1",
   "main": "extension.js"
 }
+
