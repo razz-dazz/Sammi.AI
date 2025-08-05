@@ -1,8 +1,24 @@
-{
+
   "name": "my-worker",
+  "route": "dev.example.com/*",
+  "vars": {
+    "ENVIRONMENT": "dev"
+  },
   "env": {
-    "<ENV_NAME>": {
-      // environment-specific configuration goes here
+    "staging": {
+      "vars": {
+        "ENVIRONMENT": "staging"
+      },
+      "route": "staging.example.com/*"
+    },
+    "production": {
+      "vars": {
+        "ENVIRONMENT": "production"
+      },
+      "routes": [
+        "example.com/foo/*",
+        "example.com/bar/*"
+      ]
     }
   }
 }
