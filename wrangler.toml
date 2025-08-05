@@ -1,4 +1,16 @@
-name = "my-worker"
 
-[env]
 "<ENV_NAME>" = { }
+name = "my-worker"
+route = "dev.example.com/*"
+vars = { ENVIRONMENT = "dev" }
+
+[env.staging]
+vars = { ENVIRONMENT = "staging" }
+route = "staging.example.com/*"
+
+[env.production]
+vars = { ENVIRONMENT = "production" }
+routes = [
+  "example.com/foo/*",
+  "example.com/bar/*"
+]
